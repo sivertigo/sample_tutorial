@@ -8,8 +8,8 @@ RUN mkdir $APP_HOME
 ADD . $APP_HOME/
 WORKDIR $APP_HOME/
 #<<<<<<< HEAD
-RUN gem install bundler --pre
-RUN bundle install --jobs=4
+RUN gem install bundler
+RUN bundle install
 #ADD . $APP_HOME
 #=======
 #RUN gem update --system
